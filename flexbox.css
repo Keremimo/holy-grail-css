@@ -41,7 +41,8 @@ nav a {
 }
 
 aside img {
-    width: 75%;
+    width: 80%;
+    padding-top: 1rem;
 }
 
 .footer {
@@ -89,6 +90,7 @@ aside img {
     aside img {
         width: 15%;
         text-align: center;
+        padding-top: 0;
     }
 
     nav a {
