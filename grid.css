@@ -1,47 +1,84 @@
 body {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    gap: 0px;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 8px;
     text-align: center;
-    display: 100vh 100vh;
 }
 
 header {
-    grid-column: span 5 / span 5;
-}
-
-main {
-    grid-column: span 3 / span 3;
-    grid-row: span 6 / span 6;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    text-align: left;
-    width: 42rem;
-    margin: 0 auto;
+    grid-row-start: 1;
 }
 
 nav {
-    grid-row: span 3 / span 3;
-    grid-column-start: 1;
     grid-row-start: 2;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-auto-flow: column;
 }
 
+
+main {
+    grid-row: span 3;
+    grid-row-start: 3;
+    text-align: left;
+}
+
+
 aside {
-    grid-row: span 3 / span 3;
-    grid-column-start: 5;
-    grid-row-start: 2;
+    grid-row-start: 6;
 }
 
 footer {
-    grid-column: span 5 / span 5;
-    grid-row-start: 8;
+    grid-row-start: 7;
 }
 
 aside img {
     width: 25%;
+}
+
+@media (width > 1024px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 0px;
+        text-align: center;
+        display: 100vh 100vh;
+    }
+
+    header {
+        grid-column: span 5 / span 5;
+    }
+
+    main {
+        grid-column: span 3 / span 3;
+        grid-row: span 6 / span 6;
+        grid-column-start: 2;
+        grid-row-start: 2;
+        text-align: left;
+        width: 42rem;
+        margin: 0 auto;
+    }
+
+    nav {
+        grid-row: span 3 / span 3;
+        grid-column-start: 1;
+        grid-row-start: 2;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-auto-flow: column;
+    }
+
+    aside {
+        grid-row: span 3 / span 3;
+        grid-column-start: 5;
+        grid-row-start: 2;
+    }
+
+    footer {
+        grid-column: span 5 / span 5;
+        grid-row-start: 8;
+    }
+
+    aside img {
+        width: 25%;
+    }
 }
