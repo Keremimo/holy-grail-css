@@ -24,6 +24,10 @@ nav {
     flex-direction: column;
 }
 
+nav a {
+    padding-bottom: 0.5rem;
+}
+
 .content-body main {
     flex-grow: 1;
     overflow: auto;
@@ -41,4 +45,44 @@ aside img {
 
 .footer {
     text-align: center;
+}
+
+@media (width < 1024px) {
+
+    .header,
+    .footer {
+        flex: 1;
+    }
+
+    .content-body {
+        flex-grow: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        max-height: 1rem;
+    }
+
+    .content-body main {
+        flex-grow: 1;
+        overflow: hidden;
+    }
+
+    .content-body nav,
+    .content-body aside {
+        flex: 0 0 100px;
+        overflow: hidden;
+    }
+
+    aside img {
+        width: 15%;
+        text-align: center;
+    }
+
+    nav a {
+        padding-right: 0.5rem;
+    }
 }
