@@ -22,6 +22,7 @@
 nav {
     display: flex;
     flex-direction: column;
+    padding-top: 1rem;
 }
 
 nav a {
@@ -64,6 +65,9 @@ aside img {
         display: flex;
         flex-direction: row;
         max-height: 1rem;
+        text-align: center;
+        justify-content: center;
+        padding-top: 0;
     }
 
     .content-body main {
@@ -77,6 +81,11 @@ aside img {
         overflow: hidden;
     }
 
+    aside {
+        text-align: center;
+        justify-content: center;
+    }
+
     aside img {
         width: 15%;
         text-align: center;
@@ -84,5 +93,6 @@ aside img {
 
     nav a {
         padding-right: 0.5rem;
+        text-align: center;
     }
 }
