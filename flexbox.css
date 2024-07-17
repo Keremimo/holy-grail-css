@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex: 1;
+}
+
+.header {
+    text-align: center;
+}
+
+.header,
+.footer {
+    flex: 0 0 50px;
+}
+
+.content-body {
+    flex-grow: 1;
+    display: flex;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-body main {
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.content-body nav,
+.content-body aside {
+    flex: 0 0 100px;
+    overflow: auto;
+}
+
+aside img {
+    width: 75%;
+}
+
+.footer {
+    text-align: center;
+}
